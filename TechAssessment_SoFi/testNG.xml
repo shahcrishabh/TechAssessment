@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Tech_Assessment" verbose="1" >
+<parameter name="environment" value="test"/>
+  <test name="Web_API" >	
+    <classes>
+      <class name="test_scripts.API.Companies_Details"/>
+      <class name="test_scripts.API.Search_Movies"/>
+    </classes>
+  </test>
+  <test name="Web_UI" >	
+    <classes>
+      <class name="test_scripts.Web.Invalid_Login"/>
+      <class name="test_scripts.Web.Add_Item_To_Cart"/>
+    </classes>
+  </test>
+</suite>
